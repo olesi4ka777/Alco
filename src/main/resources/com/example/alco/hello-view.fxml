@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alco.AlcoController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alco.AlcoController">
    <children>
       <TableView fx:id="table" layoutY="177.0" prefHeight="405.0" prefWidth="808.0">
         <columns>
@@ -23,12 +20,12 @@
       </TableView>
       <Button layoutX="670.0" layoutY="92.0" mnemonicParsing="false" onAction="#saveToDB" prefHeight="25.0" prefWidth="102.0" text="add date" />
       <Button layoutX="670.0" layoutY="138.0" mnemonicParsing="false" onAction="#reLoadDB" prefHeight="25.0" prefWidth="102.0" text="loading in DB" />
-      <TextField layoutX="77.0" layoutY="43.0" onAction="#tf1" prefHeight="25.0" prefWidth="123.0" />
-      <TextField layoutX="261.0" layoutY="138.0" onAction="#tf6" prefHeight="25.0" prefWidth="141.0" />
-      <TextField layoutX="263.0" layoutY="43.0" onAction="#tf4" prefHeight="25.0" prefWidth="141.0" />
-      <TextField layoutX="77.0" layoutY="93.0" onAction="#tf2" prefHeight="25.0" prefWidth="123.0" />
-      <TextField layoutX="77.0" layoutY="138.0" onAction="#tf3" prefHeight="25.0" prefWidth="123.0" />
-      <TextField layoutX="261.0" layoutY="92.0" onAction="#tf5" prefHeight="25.0" prefWidth="141.0" />
+      <TextField fx:id="tf1" layoutX="77.0" layoutY="43.0" prefHeight="25.0" prefWidth="123.0" />
+      <TextField fx:id="tf6" layoutX="261.0" layoutY="138.0" prefHeight="25.0" prefWidth="141.0" />
+      <TextField fx:id="tf4" layoutX="263.0" layoutY="43.0" onAction="#tf4" prefHeight="25.0" prefWidth="141.0" />
+      <TextField fx:id="tf2" layoutX="77.0" layoutY="93.0" prefHeight="25.0" prefWidth="123.0" />
+      <TextField fx:id="tf3" layoutX="77.0" layoutY="138.0" prefHeight="25.0" prefWidth="123.0" />
+      <TextField fx:id="tf5" layoutX="261.0" layoutY="92.0" prefHeight="25.0" prefWidth="141.0" />
       <Text fill="#3c11b2" layoutX="22.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="category" />
       <Text fill="#180dae" layoutX="11.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="subcategory" wrappingWidth="67.00390625" />
       <Text fill="#3c11b2" layoutX="45.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="label" />
@@ -37,8 +34,8 @@
       <Text fill="#3c11b2" layoutX="222.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="level" />
       <Text fill="#3c11b2" layoutX="436.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cask" />
       <Text fill="#050980" layoutX="534.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="yearproduction" />
-      <TextField layoutX="526.0" layoutY="138.0" onAction="#tf8" prefHeight="25.0" prefWidth="109.0" />
-      <TextField layoutX="415.0" layoutY="138.0" onAction="#tf7" prefHeight="25.0" prefWidth="87.0" />
+      <TextField fx:id="tf8" layoutX="526.0" layoutY="138.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="tf7" layoutX="415.0" layoutY="138.0" prefHeight="25.0" prefWidth="87.0" />
       <Button layoutX="415.0" layoutY="43.0" mnemonicParsing="false" onAction="#click" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #0ebfcc;" text="test connect DB" textFill="#cc0ea6a8" />
       <Button layoutX="556.0" layoutY="43.0" mnemonicParsing="false" onAction="#click" text="Button" />
       <Button layoutX="670.0" layoutY="43.0" mnemonicParsing="false" onAction="#dell" prefHeight="25.0" prefWidth="102.0" text="dell" />

@@ -20,4 +20,8 @@ public class AlcoApplication extends Application {
     public static void main(String[] args) {
         launch();
     }
+
+    public int getId() {
+        return 0;
+    }
 }
